@@ -1,0 +1,55 @@
+name: kenny_tv
+description: "An Android TV app to stream South Park episodes directly from their servers."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: "none"
+
+version: 1.0.0+1
+
+minSdkVersion: "21"
+targetSdkVersion: "30"
+
+environment:
+    sdk: ">=3.2.1 <4.0.0"
+
+dependencies:
+    dio: ^5.4.2+1
+    dio_http2_adapter: ^2.5.1
+    flutter:
+        sdk: flutter
+    flutter_localizations:
+        sdk: flutter
+    flutter_riverpod: ^2.5.1
+    freezed_annotation: ^2.4.1
+    go_router: ^13.2.2
+    html: ^0.15.4
+    http: ^1.2.0
+    json_annotation: ^4.8.1
+    path: ^1.9.0
+    path_provider: ^2.1.3
+    riverpod_annotation: ^2.3.5
+    sembast: ^3.7.1
+    video_player: ^2.8.6
+
+dev_dependencies:
+    flutter_test:
+        sdk: flutter
+
+    flutter_lints: ^2.0.0
+    build_runner: ^2.4.9
+    custom_lint:
+    riverpod_generator: ^2.4.0
+    riverpod_lint: ^2.3.10
+    freezed: ^2.4.7
+    json_serializable: ^6.7.1
+
+flutter:
+    uses-material-design: true
+
+    # Enable generation of localized Strings from arb files.
+    generate: true
+
+    assets:
+        # Add assets from the images directory to the application.
+        - assets/images/
+        - assets/ca/
