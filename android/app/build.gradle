@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.southpark_android_tv"
+    namespace "de.wabosh.kenny_tv"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
