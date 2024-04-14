@@ -136,11 +136,6 @@ class _VideoPlayerControlsState extends ConsumerState<VideoPlayerControls>
         _animationController.animateTo(0.0);
         showTemporarilyDisabled = true;
         break;
-      case LogicalKeyboardKey.arrowUp:
-        // Testing comes here
-        widget.controller.seekTo(
-            widget.controller.value.duration - const Duration(seconds: 60));
-        break;
     }
 
     _showTemporarily(disabled: showTemporarilyDisabled);
