@@ -4,6 +4,12 @@ A streaming app primarily developed for Android TV for the tv series South Park.
 
 The app currently only supports episodes in german language, but multi-language is already planned (and being worked on).
 
+## Downloads
+
+You can find the latest APK in the relases section in this repository or by clicking [here](https://github.com/wabosh/KennyTV/releases/latest).
+
+If you're not sure, which instruction set your device is using, download the apk without specified ABI, i.e. do not download the files with `armeabi-v7a`, `arm64-v8a` or `x86_64` in it.
+
 ## Features
 
 These features are either already implemented or planned for future versions.
@@ -45,9 +51,27 @@ The app is developed in Flutter. You can learn more about it [here](https://flut
 
 The code is mostly undocumented and uncommented and I'm not an expert in Flutter; please keep that in mind if you plan contributing to this project.
 
+### Create keystore
+
+I've replaced the default debugging keystore provided by Flutter with a self generated one.
+
+You should generate it by running the following command in the project root.
+
+#### Linux / MacOS
+```bash
+keytool -genkey -v -keystore upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+```
+
+#### Windows
+```powershell
+keytool -genkey -v -keystore upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+```
+
+
 ### Code generation
 
-Automatically generate Riverpod & Freezed code by running
+This project uses Riverpod and Freezed. These two libraries make it easier to avoid boilerplate code by using code generation.
+You can automatically generate Riverpod & Freezed code by running
 
 ```
 flutter pub run build_runner watch
