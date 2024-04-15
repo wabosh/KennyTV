@@ -1,6 +1,6 @@
 {
-    "name": "southpark_android_tv",
-    "short_name": "southpark_android_tv",
+    "name": "kenny_tv",
+    "short_name": "kenny_tv",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
