@@ -23,6 +23,7 @@ These features are either already implemented or planned for future versions.
 -   [ ] Language selection
 -   [ ] i18n
 -   [ ] Mobile version
+-   [ ] Random episode playback
 
 ## Screenshots
 
